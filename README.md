@@ -1,6 +1,6 @@
 # APS1_DesAgil
 
-APS 1 da Matéria de Desenvolvimento Ágil do 3° Semestre do curso de Engenharia de Computação no Insper mestrada pelo professor Marcelo Hashimoto.
+APS 1 da matéria de Desenvolvimento Ágil do 3° Semestre do curso de Engenharia de Computação no Insper mestrada pelo professor Marcelo Hashimoto.
 
   Integrantes:
   
