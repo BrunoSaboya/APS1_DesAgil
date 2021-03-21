@@ -7,14 +7,14 @@ public class Carrinho {
 	private List<Pedido> listaPedidos;
 	
 	public Carrinho() {
-		super ();
+		super();
 		this.listaPedidos = new ArrayList<>();
 	}
 	public List<Pedido> getPedido(){
 		return this.listaPedidos;
 	}
 	public void Verifica(Produto produto) {
-		for (Pedido pedido : this.listaPedidos) {
+		for (Pedido pedido:this.listaPedidos) {
 			if (pedido.getProduto() == produto) {
 				pedido.Incrementa();
 				break;

@@ -7,6 +7,7 @@ public class Caixa {
 private Map<Integer, Integer> descontos;
 	
 	public Caixa() {
+		super();
 		this.descontos = new HashMap<>();	
 	}
 	public void Insere(Produto produto, int n) {
@@ -18,8 +19,8 @@ private Map<Integer, Integer> descontos;
 		double somaCarrinho = 0.0;
 		for (Pedido pedido : carrinho.getPedido()) {
 			if  (this.descontos.containsKey(pedido.getProduto().getCodigo())){
-				double precoDesconto = (pedido.getProduto().getPreco() * ((1 - (this.descontos.get(pedido.getProduto().getCodigo())/100)) * pedido.getQuantidade()));
-				somaCarrinho += precoDesconto; 
+				double precoDesconto = this.descontos.get(pedido.getProduto().getCodigo());
+				somaCarrinho += pedido.getProduto().getPreco() * (1-(precoDesconto/100)) * pedido.getQuantidade();
 			}
 			else {
 				somaCarrinho += pedido.getProduto().getPreco() * pedido.getQuantidade();
