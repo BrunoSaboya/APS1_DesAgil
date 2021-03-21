@@ -1,4 +1,4 @@
-package source;
+package br.edu.insper.desagil.entrega;
 
 public class Produto {
 	private int codigo;

@@ -1,10 +1,10 @@
-package source;
+package br.edu.insper.desagil.entrega;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Caixa {
-	private Map<Integer, Integer> descontos;
+private Map<Integer, Integer> descontos;
 	
 	public Caixa() {
 		this.descontos = new HashMap<>();	
@@ -28,3 +28,4 @@ public class Caixa {
 		return somaCarrinho;
 	}
 }
+

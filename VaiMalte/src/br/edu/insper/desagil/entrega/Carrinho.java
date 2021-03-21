@@ -1,4 +1,4 @@
-package source;
+package br.edu.insper.desagil.entrega;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +7,7 @@ public class Carrinho {
 	private List<Pedido> listaPedidos;
 	
 	public Carrinho() {
+		super ();
 		this.listaPedidos = new ArrayList<>();
 	}
 	public List<Pedido> getPedido(){
@@ -15,7 +16,8 @@ public class Carrinho {
 	public void Verifica(Produto produto) {
 		for (Pedido pedido : this.listaPedidos) {
 			if (pedido.getProduto() == produto) {
-				pedido.Encrementa();
+				pedido.Incrementa();
+				break;
 			}
 		}
 		Pedido novoPedido = new Pedido(produto);

@@ -1,4 +1,4 @@
-package source;
+package br.edu.insper.desagil.entrega;
 
 public class Pedido {
 	private Produto produto;
@@ -12,10 +12,9 @@ public class Pedido {
 		return this.produto;
 	}
 	public int getQuantidade() {
-		quantidade = 1;
 		return this.quantidade;
 	}
-	public void Encrementa() {
+	public void Incrementa() {
 		this.quantidade += 1;
 	}
 	public double total() {

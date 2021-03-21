@@ -1,4 +1,4 @@
-package source;
+package br.edu.insper.desagil.entrega;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -6,7 +6,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class TestadorTest {
-
 	private Testador t;
 
 	@BeforeEach
@@ -38,5 +37,4 @@ class TestadorTest {
 	public void testeE() {
 	    assertTrue(t.testeE());
 	}
-
 }

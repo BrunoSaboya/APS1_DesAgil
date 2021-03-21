@@ -1,4 +1,5 @@
-package source;
+package br.edu.insper.desagil.entrega;
+
 
 public class Testador {
 	public boolean testeA() {
@@ -27,12 +28,12 @@ public class Testador {
 	public boolean testeC() {
 		Carrinho carrinhoC = new Carrinho();
 		
-		Produto produtoC = new Produto(11, "leuven", 500);
+		Produto produtoC = new Produto(11, "leuven", 500.00);
 		carrinhoC.Verifica(produtoC);
 		
 		Caixa caixaC = new Caixa();
 		caixaC.Insere(produtoC, 10);
-		if (caixaC.totalCaixa(carrinhoC) == 450) {
+		if (caixaC.totalCaixa(carrinhoC) == 450.00) {
 			return true;
 		}
 		return false;
@@ -47,7 +48,7 @@ public class Testador {
 		carrinhoD.Verifica(produtoD2);
 		
 		Pedido pedidoD = new Pedido(produtoD2);
-		pedidoD.Encrementa();
+		pedidoD.Incrementa();
 		
 		Caixa caixaD = new Caixa();
 		caixaD.Insere(produtoD, 10);
@@ -65,8 +66,8 @@ public class Testador {
 		carrinhoE.Verifica(produtoE);
 		carrinhoE.Verifica(produtoE2);
 		
-		Pedido pedidoD = new Pedido(produtoE);
-		pedidoD.Encrementa();
+		Pedido pedidoE = new Pedido(produtoE);
+		pedidoE.Incrementa();
 		
 		Caixa caixaD = new Caixa();
 		caixaD.Insere(produtoE, 30);
